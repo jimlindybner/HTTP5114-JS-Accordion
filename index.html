@@ -1,0 +1,57 @@
+<!-- 
+01) Create starting HTML
+02) Connect a CSS
+03) Confirm CSS connected
+04) Hide section using CSS
+05) Connect JS
+06) Confirm JS is connected
+07) Can JS react to click?
+08) Confirm click is working
+09) Function needs to know which section to target
+10) Can JS display hidden content?
+11) Confirm that display works
+12) Use the function parameter to work for all sections
+13) Add an if statement to toggle display
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Accordion</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>JavaScript Accordion</h1>
+
+    <div class="accordion">
+        <div>
+            <a href="#" onclick="hideDisplaySection('section-1')">Section 1</a>
+        </div>
+        <div class="accordion-section" id="section-1">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, rem!</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+            <a href="#" onclick="hideDisplaySection('section-2')">Section 2</a>
+        </div>
+        <div class="accordion-section" id="section-2">
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, rem!</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+            <a href="#" onclick="hideDisplaySection('section-3')">Section 3</a>
+        </div>
+        <div class="accordion-section" id="section-3">
+            <h2>Section 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, rem!</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
